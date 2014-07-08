@@ -27,4 +27,8 @@ He can:
 
 ### Users
 
-To show the list of all users, use the following URI: `/v1/users/`
+| Route                                                       | Function         
+| -------------                                               |:--------------------------------:                               |
+| `/v1/users/`                                                | Display a list of all the users.                                |
+| `/v1/users/:number/` (where `:number` is an integer)        | Display piece of informations about a user according to his ID. |
+| `/v1/users/delete/:number/` (where `:number` is an integer) | Delete a user according to his ID.                              |
