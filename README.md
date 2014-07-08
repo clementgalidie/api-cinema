@@ -27,8 +27,16 @@ He can:
 
 ### Users
 
-| Route                                                       | Function         
-| -------------                                               |:--------------------------------:                               |
-| `/v1/users/`                                                | Display a list of all the users.                                |
-| `/v1/users/:number/` (where `:number` is an integer)        | Display piece of informations about a user according to his ID. |
-| `/v1/users/delete/:number/` (where `:number` is an integer) | Delete a user according to his ID.                              |
+| Route                                                         | Function         
+| -------------                                                 |:--------------------------------:                               |
+| `/v1/users/`                                                  | Display a list of all the users.                                |
+| `/v1/users/:number/` (where `:number` is an integer)          | Display piece of informations about a user according to his ID. |
+| `/v1/users/deleting/:number/` (where `:number` is an integer) | Delete a user according to his ID.                              |
+
+### Movies
+
+| Route                                                          | Function         
+| -------------                                                  |:--------------------------------:                                 |
+| `/v1/movies/`                                                  | Display a list of all the movies.                                 |
+| `/v1/movies/:number/` (where `:number` is an integer)          | Display piece of informations about a movie according to his ID.  |
+| `/v1/movies/deleting/:number/` (where `:number` is an integer) | Delete a movie according to his ID.                               |
