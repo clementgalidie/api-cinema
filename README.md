@@ -24,3 +24,7 @@ He can:
 * A user can add and delete a movie he has disliked.
 * A user can add and delete a movie he has watched.
 * A user can add and delete a movie he would like to watch.
+
+### Users
+
+To show the list of all users, use the following URI: `/v1/users/`
