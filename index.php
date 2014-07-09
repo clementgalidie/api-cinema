@@ -1,7 +1,7 @@
 <?php
 	header('content-type: application/json; charset=utf-8'); // Set utf-8.
 	require 'toro.php';
-	require 'includes/database.php';
+	require 'includes/database.php'; // Connection to the database.
 
 	// Function to load each class.
 	function loadClass($class) {
