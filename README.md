@@ -2,8 +2,9 @@
 
 ## Description
 
-The main purpose of this API is to manage a list of movies.
+The main purpose of this API is to manage a list of users and movies.
 Basically, several actions can be done.
+You can use [Advanced Rest Client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo) Google Chrome extension to test the API.
 
 ### User
 
@@ -27,16 +28,14 @@ He can:
 
 ### Users
 
-| Route                                                         | Function         
-| -------------                                                 |:--------------------------------:                               |
-| `/v1/users/`                                                  | Display a list of all the users.                                |
-| `/v1/users/:number/` (where `:number` is an integer)          | Display piece of informations about a user according to his ID. |
-| `/v1/users/deleting/:number/` (where `:number` is an integer) | Delete a user according to his ID.                              |
+| Resources                                       | POST (create) | GET (read)                    | PUT (update)                     | DELETE (delete) |
+| ---------                                       |:-------------:|:------------------:           |:------------:                    |:---------------:|
+| `/users/`                                       | Create a user | List all the users            |                                  |                 |
+| `/users/:number/ (where `:number` is an integer)|               | Get a user with a specific ID | Update a user with a specific ID | Delete a user with a specific ID
 
 ### Movies
 
-| Route                                                          | Function         
-| -------------                                                  |:--------------------------------:                                 |
-| `/v1/movies/`                                                  | Display a list of all the movies.                                 |
-| `/v1/movies/:number/` (where `:number` is an integer)          | Display piece of informations about a movie according to his ID.  |
-| `/v1/movies/deleting/:number/` (where `:number` is an integer) | Delete a movie according to his ID.                               |
+| Resources                                       | POST (create) | GET (read)                    | PUT (update)                     | DELETE (delete) |
+| ---------                                       |:-------------:|:------------------:           |:------------:                    |:---------------:|
+| `/movies/`                                       | Create a movie | List all the movie           |                                  |                 |
+| `/movies/:number/ (where `:number` is an integer)|               | Get a movie with a specific ID | Update a movie with a specific ID | Delete a movie with a specific ID
