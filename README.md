@@ -31,11 +31,11 @@ He can:
 | Resources                                       | POST (create) | GET (read)                    | PUT (update)                     | DELETE (delete) |
 | ---------                                       |:-------------:|:------------------:           |:------------:                    |:---------------:|
 | `/users/`                                       | Create a user | List all the users            |                                  |                 |
-| `/users/:number/ (where `:number` is an integer)|               | Get a user with a specific ID | Update a user with a specific ID | Delete a user with a specific ID
+| `/users/:number/` (where `:number` is an integer)|               | Get a user with a specific ID | Update a user with a specific ID | Delete a user with a specific ID
 
 ### Movies
 
 | Resources                                       | POST (create) | GET (read)                    | PUT (update)                     | DELETE (delete) |
 | ---------                                       |:-------------:|:------------------:           |:------------:                    |:---------------:|
 | `/movies/`                                       | Create a movie | List all the movie           |                                  |                 |
-| `/movies/:number/ (where `:number` is an integer)|               | Get a movie with a specific ID | Update a movie with a specific ID | Delete a movie with a specific ID
+| `/movies/:number/` (where `:number` is an integer)|               | Get a movie with a specific ID | Update a movie with a specific ID | Delete a movie with a specific ID
