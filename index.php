@@ -13,21 +13,21 @@
 
 	// Defined HTTP errors.
 	ToroHook::add('400', function() {
-		echo 'Bad Request';
+		echo json_encode('Bad Request');
 	});
 	ToroHook::add('401', function() {
-		echo 'Unauthorized';
+		echo json_encode('Unauthorized');
 	});
 	ToroHook::add('403', function() {
-		echo 'Forbidden';
+		echo json_encode('Forbidden');
 	});
 	ToroHook::add('404', function() {
-		echo 'Not Found.';
+		echo json_encode('Page not found');
 	});
 
 	// Defined server error.
 	ToroHook::add('500', function() {
-		echo '500 Internal Server Error';
+		echo json_encode('500 Internal Server Error');
 	});
 
 	// Defined routes.
