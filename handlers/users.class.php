@@ -1,5 +1,5 @@
 <?php
-	/* users class
+	/* Users class
 	 * Purpose: list all the users.
 	 */
 
