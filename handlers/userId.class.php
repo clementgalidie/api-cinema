@@ -23,12 +23,12 @@
 			global $bdd;
 
 			$_PUT  = array();
-      if($_SERVER['REQUEST_METHOD'] == 'PUT') {
+      if($_SERVER['REQUEST_METHOD'] == 'PUT') { // If the request used to acces the page is $_PUT.
       	parse_str(file_get_contents('php://input'), $_PUT);
       }
 
 			$updateUserById = $bdd->prepare('UPDATE users SET username = :username WHERE id = :id');
-			$updateUserById->execute(array('username' => $username,
+			$updateUserById->execute(array('username' => $_PUT['username'],
 				                             'id'       => $id)
 			                        );
 		}
@@ -38,7 +38,7 @@
 			global $bdd;
 
 			$_DELETE  = array();
-      if($_SERVER['REQUEST_METHOD'] == 'DELETE') {
+      if($_SERVER['REQUEST_METHOD'] == 'DELETE') { // If the request used to acces the page is $_DELETE.
       	parse_str(file_get_contents('php://input'), $_DELETE);
       }
 
