@@ -32,9 +32,10 @@
 
 	// Defined routes.
 	Toro::serve(array(
-		'/v1/users/'          => 'users',
-		'/v1/users/:number/'  => 'userId',
-		'/v1/movies/'         => 'movies',
-		'/v1/movies/:number/' => 'movieId'
+		'/v1/users'                      => 'users',
+		'/v1/users/:number'              => 'userId',
+		'/v1/movies'                     => 'movies',
+		'/v1/movies/:number'             => 'movieId',
+		'/v1/users/:number/likes'        => 'likes'
 		));
 ?>
