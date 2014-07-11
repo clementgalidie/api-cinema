@@ -30,12 +30,19 @@ He can:
 
 | Resources                                       | POST (create) | GET (read)                    | PUT (update)                     | DELETE (delete) |
 | ---------                                       |:-------------:|:------------------:           |:------------:                    |:---------------:|
-| `/users/`                                       | Create a user | List all the users            |                                  |                 |
-| `/users/:number/` (where `:number` is an integer)|               | Get a user with a specific ID | Update a user with a specific ID | Delete a user with a specific ID
+| `/v1/users`                                       | Create a user | List all the users            |                                  |                 |
+| `/v1/users/:number` (where `:number` is an integer)|               | Get a user with a specific ID | Update a user with a specific ID | Delete a user with a specific ID
+| `/v1/users/:number/likes` | | Show all the movies a user has liked |
+| `/v1/users/:number/dislikes` | | Show all the movies a user has disliked |
+| `/v1/users/:number/watched` | | Show all the movies a user has watched |
+| `/v1/users/:number/watchlist` | | Show all the movies a user would like to watch |
+
+
+
 
 ### Movies
 
 | Resources                                       | POST (create) | GET (read)                    | PUT (update)                     | DELETE (delete) |
 | ---------                                       |:-------------:|:------------------:           |:------------:                    |:---------------:|
-| `/movies/`                                       | Create a movie | List all the movie           |                                  |                 |
-| `/movies/:number/` (where `:number` is an integer)|               | Get a movie with a specific ID | Update a movie with a specific ID | Delete a movie with a specific ID
+| `/v1/movies`                                       | Create a movie | List all the movie           |                                  |                 |
+| `/v1/movies/:number` (where `:number` is an integer)|               | Get a movie with a specific ID | Update a movie with a specific ID | Delete a movie with a specific ID
