@@ -36,6 +36,9 @@
 		'/v1/users/:number'              => 'userId',
 		'/v1/movies'                     => 'movies',
 		'/v1/movies/:number'             => 'movieId',
-		'/v1/users/:number/likes'        => 'likes'
+		'/v1/users/:number/likes'        => 'likes',
+		'/v1/users/:number/dislikes'     => 'dislikes',
+		'/v1/users/:number/watched'      => 'watched',
+		'/v1/users/:number/watchlist'    => 'watchlist'
 		));
 ?>
